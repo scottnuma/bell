@@ -1,10 +1,11 @@
 body{
-    margin: 0px;
-    font-family: 'PT Sans', sans-serif;
-    background-color:#231f20;
-    color: #cecacc;
-    height: 100%;
-    width: 100%;
+	margin: 0px;
+	font-family: 'PT Sans', sans-serif;
+	background-color: #231f20;
+	color: #cecacc;
+	height: 100%;
+	width: 100%;
+	min-width: 350px;
 }
 
 p{
@@ -72,21 +73,17 @@ h3{
     padding-bottom: 20px;
 }
 .period{
-    background-size: cover;
-    
-    text-align: center;
-    font-weight: 100;
-    font-family: 'Arvo', serif;
-
-    position: absolute;
-    top: 50px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    
-    color: white; 
-    
-    /*
+	background-size: cover;
+	text-align: center;
+	font-weight: 100;
+	font-family: 'Arvo', serif;
+	position: absolute;
+	top: 50px;
+	left: auto;
+	height: 100%;
+	width: 100%;
+	color: white;
+	right: auto;    /*
     position: absolute;
     top: 0;
     left: 0;
@@ -144,18 +141,16 @@ h3{
 
 
 .remainder{
-    font-size: 30vh;
+	font-size: 30vh;
     //text-shadow: 5vh 5vh #000;
-    text-align: center;
-    font-weight: 900;
-    font-family: 'Arvo', serif;
-
-
-    line-height: 0;
-    top: 50%;
-    width: 100%;
-    position: absolute;
-    transform: translateY(-50%);
+	text-align: center;
+	font-weight: 900;
+	font-family: 'Arvo', serif;
+	line-height: 0;
+	top: 0%;
+	width: 100%;
+	position: relative;
+	/* [disabled]transform: translateY(-50%); */
 }
 
 .remainder:before{
@@ -170,11 +165,11 @@ h3{
 
 
 #menu{
-    -webkit-filter: invert(100%);
-    z-index: 2;
-    height: 40px;
-    margin-left: 5px;
-    margin-top: 6px;
+	-webkit-filter: invert(100%);
+	z-index: 2;
+	height: 40px;
+	margin-left: 5px;
+	margin-top: 0px;
 }
 
 .holder{
@@ -188,19 +183,16 @@ h3{
 }
 
 .inner{
-    display: none;
-    position: fixed;
-    left: 0;
-
-    width: 80%;
-    height: 100%;
-
-    background-color: #cecacc;
-    text-align: left;
-    z-index: 1;
-
-    font-weight: 300;
-
+	display: none;
+	position: fixed;
+	left: 0;
+	width: 30%;
+	height: 100%;
+	background-color: #cecacc;
+	text-align: left;
+	z-index: 1;
+	font-weight: 300;
+	min-width: 200px;
 }
 
 .inner ul{
