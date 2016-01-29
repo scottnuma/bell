@@ -130,7 +130,6 @@ function Schedule(label, times){
     function currentTime(){
         //Returns a tuple with military time
         d = new Date();
-        return new Time(10,50);
         return new Time(d.getHours(), d.getMinutes());
 
     }
