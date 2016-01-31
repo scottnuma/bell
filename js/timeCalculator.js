@@ -186,7 +186,7 @@ function scheduler(){
                 new Period('XII',     new Time(12,0),     new Time(13,0)),
                 new Period('I',    new Time (13,0),    new Time(14,0)),
                 new Period('II',   new Time(14,0),     new Time(15,0)),
-                new Period('III',    new Time(15,0),     new Time(16,59)),
+                new Period('III',    new Time(15,0),     new Time(16,0)),
                 new Period('IV',     new Time(16,0),     new Time(17,0)),
                 new Period('V',    new Time (17,0),    new Time(18,0)),
                 new Period('VI',   new Time(18,0),     new Time(19,0)),
