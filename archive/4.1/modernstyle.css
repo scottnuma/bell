@@ -1,0 +1,293 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 22, 2013, 4:24:04 PM
+    Author     : Scott
+*/
+
+/*  list specialized */
+div.slot{
+    background-image: url("img/list/bird.jpg");
+    background-size: cover;
+    color: white;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: xx-large;
+    font-family: "Source Sans Pro";
+    font-weight: 900;
+    z-index: 0;
+    
+}
+
+.square{
+     width: 100px; 
+     height: 100px;
+     z-index: 1;
+
+     background: white;
+     opacity: .9;
+     color: #144057;
+     
+     float: left;
+     text-align: center;
+     line-height: 100px;
+     font-size: large;
+     font-weight: normal;
+     
+     font-family: "Source Sans Pro", "Helvetica Neue", "Roboto", "Trebuchet MS", "Century Gothic", sans-serif;
+     
+}
+
+#fillermessage{
+    font-weight: 200;
+    font-family: "Roboto", "Source Sans Pro", "Helvetica Neue", "Trebuchet MS", "Century Gothic", sans-serif;
+}
+#slot0{
+    background-image: url("img/list/bird.jpg");
+}
+
+#slot1{
+    background-image: url("img/list/gobby.jpg");
+}
+
+#slot2{
+    background-image: url("img/list/bridge.jpg");
+}
+
+#slot3{
+    background-image: url("img/list/moon.jpg");
+   color: #}
+#slot4{
+    background-image: url("img/list/patrick.jpg");
+}
+
+#slot5{
+    background-image: url("img/list/dog.gif");
+}
+#slot6{
+    background-image: url("img/list/cat.jpg");
+}
+
+#slot7{
+    background-image: url("img/list/moss.jpg");
+}
+
+#slot8{
+    background-image: url("img/list/upper.jpg");
+}
+
+#slot9{
+    background-image: url("img/list/numa.jpg");
+}
+
+
+/* end list specialized */
+a{
+text-decoration: none;
+color: #fe774c;
+
+}
+
+
+
+body{
+background-color:#1f1f1f;
+color: #FFFFFF;
+font-family: "Source Sans Pro", "Helvetica Neue", "Roboto", "Trebuchet MS", "Century Gothic", sans-serif;
+font-weight: lighter;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+h{
+margin: 0;
+}
+
+h1{
+font-size: 650px;
+text-align:center;
+font-family: "Lobster Two", "Roboto Slab", serif;
+font-weight:bold;
+margin: 0;
+color: #fe774c;
+}
+
+h2
+{
+font-size: x-large;
+color: #fe774c;
+text-align: center;
+}
+
+h3
+{
+font-size: x-large;
+text-align:left;
+color: #fe774c;
+margin: 0;
+padding-bottom: 10px
+
+}
+
+ul
+{
+margin-top:0;
+
+margin-left: 5px;
+}
+
+li.bit
+{
+    padding-left: 0;
+    padding-top: 5px;
+}
+li.bit2{
+    text-align: center;
+    margin-left: 5px;
+    padding-left: 0;
+    padding-top: 5px;
+}
+
+            /* Make Header Sticky */
+            #header_container {
+                background:#144057; height:60px; left:0; position:fixed;
+                width:100%; top:0;
+                z-index:10;
+               
+                
+            }
+            #header{
+                line-height:80px; margin:0 auto; 
+                width:100%; text-align:center; 
+                font-family: "Source Sans Pro", "Helvetica Neue", "Roboto", "Trebuchet MS", "Century Gothic", sans-serif;
+                font-size: x-large;
+                z-index: 10;
+
+            }
+
+            /* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
+            #container {
+                margin:0 auto; overflow:auto; 
+                max-width: 400px; 
+                padding-bottom: 36px;
+            }
+            #content{}
+
+            /* Make Footer Sticky */
+            #footer_container {
+                background:#144057; bottom:0; height:44px; 
+                left:0; position:fixed; width:100%; 
+            }
+            #footer {
+                line-height:44px; margin:0 auto; 
+                width:100%; text-align:center;
+                text-decoration: none;
+                font-family: "Source Sans Pro", "Helvetica Neue", "Roboto", "Trebuchet MS", "Century Gothic", sans-serif;
+            }
+            
+            li.navitem{
+                font-family: "Source Sans Pro", "Helvetica Neue", "Roboto", "Trebuchet MS", "Century Gothic", sans-serif;
+                font-size: x-large;
+                width: 33%;
+                display: block;
+                float: left;
+                border-left-style: solid;
+                border-width: 1px;
+                text-decoration: none;
+            }
+            a.nava{
+                color: white;
+                text-decoration: none;
+            }
+            
+            div.photoi{
+
+                padding-bottom: 10px;
+                
+
+                width: 77%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            
+
+                /* margin-left: auto; */      
+
+                /* margin-right: auto; */
+
+}
+
+            
+.circle
+{
+    width:250px;
+    height:250px;
+    border-radius:125px;
+    line-height:250px;
+    text-align: center;
+    background: #fe774c;
+    margin: auto;
+}
+
+/* Google Fonts */
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster Two'), local('LobsterTwo'), url(//themes.googleusercontent.com/static/fonts/lobstertwo/v4/Law3VVulBOoxyKPkrNsAaIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lobster Two Bold'), local('LobsterTwo-Bold'), url(//themes.googleusercontent.com/static/fonts/lobstertwo/v4/bmdxOflBqMqjEC0-kGsIiDqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(//themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
+}
+
+div.stamp
+{
+    overflow: auto;
+    width: 25px;
+    padding: 10px;
+    height: 25px;
+    z-index: 1;
+
+    background: white;
+    opacity: .9;
+    color: gray;
+     
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    font-size: large;
+    font-weight: normal;
+    
+    
+}
+            
+.stamptitle
+{
+    color: white;
+    font-size: large;
+    line-height: 45px;
+    /* padding-left: 10px; */
+    background-color: gray;
+    height: 45px;
+    max-width: 100%;
+    text-align: center;
+    margin-left: 5px;
+}
+
+ul.stamplist
+{
+    padding-top: 5px;
+}

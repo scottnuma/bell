@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html manifest="storage.appcache">
+    <head>
+        <title>Bell</title>
+        <meta charset="UTF-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        
+        <!-- CSS -->
+        <link href="modernstyle.css" type="text/css" rel="stylesheet" />
+        
+        <!-- Icon References -->
+        <link rel="apple-touch-icon-precomposed" href="img/Icon.jpg" />
+        
+        <!-- Startup Images -->
+            <link rel="apple-touch-startup-image" href="img/Splash.jpg">
+            <!-- iPhone 5 -->
+            <link href="img/Splash5.jpg"
+            media="(device-width: 320px) and (device-height: 568px)
+            and (-webkit-device-pixel-ratio: 2)"
+            rel="apple-touch-startup-image">
+
+            <!-- iPhone, retina -->
+            <link href="img/Splash.jpg"
+            media="(device-width: 320px) and (device-height: 480px)
+            and (-webkit-device-pixel-ratio: 2)"
+            rel="apple-touch-startup-image">
+            
+        <!-- Chrome App - Full Screen -->        
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="shortcut icon" sizes="196x196" href="img/IconAndroid.jpg">
+    
+        <!-- Web App Formatting -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style"
+              content="black-translucent">
+        
+        
+        
+        <!-- Refreshes the page every x seconds -->
+        <meta http-equiv="refresh" content="20">
+        
+        <!-- Google Analytics -->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44926632-1', 'dropboxusercontent.com');
+        ga('send', 'pageview');
+
+        </script>
+        
+        <!-- Opening Links within App -->
+        <script type="text/javascript">
+            var iWebkit;
+            if(!iWebkit){
+                iWebkit=window.onload=function(){
+                    function fullscreen(){
+                        var a=document.getElementsByTagName("a");
+                        for(var i=0;i<a.length;i++){
+                            if(a[i].className.match("noeffect")){
+                                
+                            }
+                            else{
+                                a[i].onclick=function(){
+                                    window.location=this.getAttribute("href");
+                                    return false
+                                }
+                            }
+                        }
+                    }
+                    function hideURLbar(){
+                        window.scrollTo(0,0.9)
+                    }
+                    iWebkit.init=function(){
+                        fullscreen();
+                        hideURLbar()
+                    };
+                    iWebkit.init()
+                }
+            }
+        </script>
+        
+        
+        <!-- Google Font -->
+        <link href='GoogleFont.css' rel='stylesheet' type='text/css'>
+        
+        <!-- Updating Manifest Stuff -->
+        <script>
+        function updateSite(event) {
+            window.applicationCache.swapCache();
+        }
+        window.applicationCache.addEventListener('updateready', updateSite, false);
+        </script>
+        
+        <script type="text/javascript">
+ 
+        function logEvent(event) {
+            console.log(event.type)
+            if(event.type == 'updateready'){
+                location.reload();
+            }
+        }
+
+        window.applicationCache.addEventListener('checking',logEvent,false);
+        window.applicationCache.addEventListener('noupdate',logEvent,false);
+        window.applicationCache.addEventListener('downloading',logEvent,false);
+        window.applicationCache.addEventListener('cached',logEvent,false);
+        window.applicationCache.addEventListener('updateready',logEvent,false);
+        window.applicationCache.addEventListener('obsolete',logEvent,false);
+        window.applicationCache.addEventListener('error',logEvent,false);
+
+        </script>
+       
+    </head>
+    <body onload = "show()">
+        
+        <!-- Begin: Sticky Header -->
+        <div id="header_container">
+            <div id="header">
+                <div id="specialmessage">Bell</div>
+            </div>
+        </div>
+        <!-- End: Sticky Header -->
+        
+        <!-- Begin: Page Content -->
+        <div id="container" style="padding-bottom:0px">
+            <div id="content">
+                <a href="Sched.html" style="text-decoration: none;">
+                    
+                    <h1 style="font-size:300px; line-height: 150%" id="mymessage">
+                        <div id="fillermessage" >
+                        </div>
+                    </h1>
+                    
+                        
+                </a>
+            </div>
+        </div>
+        <!-- End: Page Content -->
+        
+        <!-- Begin: Sticky Footer -->
+        <div id="footer_container">
+            
+            <div id="footer">
+                <ul style="
+                    list-style-type:none; margin:0; padding:0; width: 100%;
+                    overflow: hidden">
+                    <li class="navitem" style="border-left-style: none;">
+                        <a class="nava" href="about.html">About</a>
+                    </li>
+                    <li class="navitem"><a class="nava" href="Sched.html">
+                            Bell
+                                    </a></li>
+                    <li class="navitem">
+                        <a class="nava" href="list.html">Times</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End: Sticky Footer -->
+        
+        <script src="Clock.js"></script>
+    </body>
+</html>

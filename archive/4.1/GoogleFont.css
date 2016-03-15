@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 1, 2013, 9:24:35 PM
+    Author     : Kelly
+*/
+
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster Two'), local('LobsterTwo'), url(https://themes.googleusercontent.com/static/fonts/lobstertwo/v4/Law3VVulBOoxyKPkrNsAaIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lobster Two Bold'), local('LobsterTwo-Bold'), url(https://themes.googleusercontent.com/static/fonts/lobstertwo/v4/bmdxOflBqMqjEC0-kGsIiDqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
+}
+

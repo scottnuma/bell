@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+To change this license headimer, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html manifest="storage.appcache">
+    <head>
+        <title>About</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- CSS -->
+        <link href="modernstyle.css" type="text/css" rel="stylesheet" />
+        
+        <!-- Icon References -->
+        <link rel="apple-touch-icon-precomposed" href="img/Icon.jpg" />
+        <link rel="apple-touch-startup-image" href="img/Splash.jpg" /> 
+        
+        <!-- Web App Formatting -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style"
+              content="black-translucent">
+        
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-44926632-1', 'dropboxusercontent.com');
+            ga('send', 'pageview');
+
+        </script>
+        
+        <!-- Opening Links within App -->
+        <script type="text/javascript">
+            var iWebkit;
+            if(!iWebkit){
+                iWebkit=window.onload=function(){
+                    function fullscreen(){
+                        var a=document.getElementsByTagName("a");
+                        for(var i=0;i<a.length;i++){
+                            if(a[i].className.match("noeffect")){
+                                
+                            }
+                            else{
+                                a[i].onclick=function(){
+                                    window.location=this.getAttribute("href");
+                                    return false
+                                }
+                            }
+                        }
+                    }
+                    function hideURLbar(){
+                        window.scrollTo(0,0.9)
+                    }
+                    iWebkit.init=function(){
+                        fullscreen();
+                        hideURLbar()
+                    };
+                    iWebkit.init()
+                }
+            }
+        </script>
+        
+        <!-- Google Font -->
+        <link href='GoogleFont.css' rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body>
+        <!-- Begin: Sticky Header -->
+        <div id="header_container">
+            <div id="header">
+                About
+            </div>
+        </div>
+        <!-- End: Sticky Header -->
+        
+        <!-- Begin: Page Content -->
+        <div id="container"> 
+            <div id="content" style="padding-top: 60px">
+                <svg width="100%" height="300px" viewBox="0 0 300 300" 
+                xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <desc>Hexagon</desc>
+                <!-- Show outline of canvas using 'rect' element -->
+              
+ 
+                <polygon fill="#fe774c" stroke="#144057" stroke-width="15" 
+                   points="
+                   150	10
+                    28.75644347	80
+                    28.75644347	220
+                    150	290
+                    271.2435565	220
+                    271.2435565	80
+                    ">
+                    <animateTransform attributeType="xml"
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 150 150"
+                    to="360 150 150"
+                    dur="20s"
+                    repeatCount="indefinite"/>
+
+                </polygon>
+                <text x="45" y="195" font-family="Lobster Two" font-size="130px" 
+                      fill="white" >Bell</text>
+                </svg>
+                
+                
+                <h3 style='text-align:center; padding-bottom: 0px;'>
+                    By Scott Numamoto
+                </h3>
+                
+                <p style="text-indent: 2em; max-width:400px; 
+                          margin: auto; padding: 10px; text-align: justify;">
+                    Bell quickly tells how many minutes of class are left. 
+                    Whether at zero, break, or the last class of the day, Bell
+                    calculates the time. Find Bell at 
+                    <a href="http://bit.ly/belltimes" 
+                       style="text-decoration: underline">
+                        http://bit.ly/belltimes
+                    </a>.
+                </p><br>
+                
+               
+                <!-- History Section -->
+                <div class="stamp">4.1</div>
+                <div class="stamptitle">
+                    Version - 2.15.14
+                </div>
+                <ul class="stamplist">
+                    <li class="bit">
+                        Asterisk Icon
+                    </li>
+                    <li class="bit">
+                        History dropped to improve loading times
+                    </li>
+                    <li class="bit">
+                        <a href="Minimum/index.html">Bell Minimum - No Gloss</a>
+                    </li>
+                </ul>
+                                   
+               
+              
+                <!-- Mission Goals Section -->     
+                <div class="stamp">M</div>
+                <div class="stamptitle">
+                    Mission Goals
+                </div>
+               
+                <ul class="stamplist" style="margin-left: 5px;">
+                    <li>Tell how many minutes of class are left</li>
+                    <li>Exhibit modern style and layout</li>
+                    <li>Showcase notable photographs</li>
+                    <li>Learn more about HTML, CSS, and web design</li>
+                </ul>
+            </div>
+        </div>
+        <!-- End: Page Content -->
+        
+        <!-- Begin: Sticky Footer -->
+        <div id="footer_container">
+            
+            <div id="footer">
+                <ul style="
+                    list-style-type:none; margin:0; padding:0; width: 100%;
+                    overflow: hidden">
+                    <li class="navitem" style="border-left-style: none;">
+                        <a class="nava" href="about.html">About</a>
+                    </li>
+                    <li class="navitem"><a class="nava" href="Sched.html">
+                                        Bell
+                                    </a></li>
+                    <li class="navitem"><a class="nava" href="list.html">Times</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End: Sticky Footer -->
+        
+    </body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html manifest="storage.appcache">
+    <head>
+        <title>Version History</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- iPhone WebApp -->
+        <meta name = "viewport" content = "width = device-width">
+        <link rel="stylesheet" href="modernstyle.css">
+        
+        <!-- Opening Links within App -->
+        <script type="text/javascript">
+            var iWebkit;
+            if(!iWebkit){
+                iWebkit=window.onload=function(){
+                    function fullscreen(){
+                        var a=document.getElementsByTagName("a");
+                        for(var i=0;i<a.length;i++){
+                            if(a[i].className.match("noeffect")){
+                                
+                            }
+                            else{
+                                a[i].onclick=function(){
+                                    window.location=this.getAttribute("href");
+                                    return false
+                                }
+                            }
+                        }
+                    }
+                    function hideURLbar(){
+                        window.scrollTo(0,0.9)
+                    }
+                    iWebkit.init=function(){
+                        fullscreen();
+                        hideURLbar()
+                    };
+                    iWebkit.init()
+                }
+            }
+        </script>
+
+        <!-- Robot Font -->
+        <link href='GoogleFont.css' rel='stylesheet' type='text/css'>
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-44926632-1', 'dropboxusercontent.com');
+            ga('send', 'pageview');
+
+        </script>
+        
+        
+    </head>
+    <body>
+        <!-- Begin: Stick Header -->
+        <div id="header_container">
+            <div id="header">
+                Version History
+            </div>
+        </div>
+        <!-- End: Sticky Header -->
+        
+        <!-- Begin: Page Content -->
+        <div id="container">
+            <div id="content" style="padding-top: 50px;
+                 margin: auto; max-width: 400px;">
+                
+                <!-- 3.9 -->
+                <div class="stamp">3.9</div>
+                <div class="stamptitle">1.29.14</div>
+                <ul class="stamplist">
+                    <li class="bit">
+                        New TJ Icon
+                    </li>           
+                </ul>
+                
+                <div class="photoi">
+                        <img src="img/gallery/ace.jpg"
+                             style="width: 100%;"
+                             alt="JT">
+                </div>
+                
+                <!-- 3.8 -->
+                <div class="stamp">3.8</div>
+                <div class="stamptitle">1.18.14</div>
+                <ul class="stamplist">
+                    <li class="bit">
+                        New Fish Splash (now for iPhone 5 too)
+                    </li>
+                    <li class="bit">
+                        New Formal Queen Icon
+                    </li>               
+                </ul>
+                
+                <div class="photoi">
+                        <img src="img/gallery/icon-version-3.8.jpg"
+                             style="width: 100%;"
+                             alt="Yujin">
+                </div>
+                
+                <div class="photoi">
+                        <img src="img/gallery/splash-version-3.8.jpg"
+                             style="width: 100%;"
+                             alt="Fish">
+                </div>
+                
+                 <!-- 3.7 -->
+                <div class="stamp">3.7</div>
+                <div class="stamptitle">1.10.14</div>
+                <ul class="stamplist">
+                    <li class="bit">
+                        Thanks to your support Bell is now averaging 60
+                        visits and almost 900 page views per weekday
+                    </li>
+                    <li class="bit">
+                        Tweaks to decrease loading time
+                    </li>
+                    <li class="bit">
+                        New possible logo
+                    </li>
+                    <li class="bit">
+                        Changing fonts around
+                    </li>
+                    <li class="bit">
+                        Times message changed after hours and added default message to appear during weekends
+                    </li>                    
+                </ul>
+                
+                <div class="photoi">
+                        <img src="img/gallery/icon-version-3.7.jpg"
+                             style="width: 100%;"
+                             alt="Chey">
+                </div>
+                
+                <!-- 3.6 -->
+                <div class="stamp">3.6</div>
+                <div class="stamptitle">12.24.13</div>
+                <ul class="stamplist">
+                    <li class="bit">
+                        Times: The next way for referencing time (#TJ)
+                    </li>
+                    <li class="bit">Shows the bell schedule for coming classes</li>
+                    <li class="bit">New photos by Michael Lin</li>
+                    <li class="bit">
+                        History and Gallery have been combined and relocated
+                    </li>
+                    <li class="bit">New Format for History
+                    <li class="bit">Passing periods added</li>
+                    
+                    
+                </ul>
+                <div class="photoi">
+                        <img src="img/gallery/icon-version-3.6.jpg"
+                             style="width: 100%;"
+                             alt="Juli">
+                        "Hi" - <a href="http://last-chair.tumblr.com/">
+                        Last-Chair
+                        </a>
+                </div>
+                
+                <!-- 3.5 -->
+                <div class="stamp">3.5</div>
+                <div class="stamptitle">12.19.13</div>
+                <ul class="stamplist">
+                    <li class="bit">cindyyfann Snapchat Story Icon</li>
+                    
+                </ul>
+                <div class="photoi">
+                        <img src="img/gallery/icon-version-3.5.jpg"
+                             style="width: 100%;"
+                             alt="Cindy">
+                        Almost at 
+                        <a href="http://jayandpat.tumblr.com">jayandpat</a>
+                </div>
+                   
+                <!-- 3.4 -->
+                <div class="stamp">3.4</div>
+                <div class="stamptitle">12.14.13</div>
+                <ul class="stamplist">
+                    <li class="bit">Update Method still WIP</li>
+                    <li class="bit">Kawaii icon</li>
+                </ul>
+                <div class="photoi">
+                    <img src="img/gallery/icon-version-3.4.jpg"
+                         style="width: 100%;"
+                         alt="Evan">
+                    Kawaii
+                </div>
+                
+                <!-- 3.3 -->
+                <div class="stamp">3.3</div>
+                <div class="stamptitle">12.8.13</div>
+                <ul class="stamplist">
+                    <li class="bit">New update method that works, no more reinstalling</li>
+                    <li class="bit">Rotating null images</li>
+                </ul>
+                
+                <div class="photoi">
+                    <img src="img/gallery/icon-version-3.3.jpg"
+                         style="width: 100%;"
+                         alt="Chey">
+                    Hot out.
+                </div>
+                 <div class="photoi">
+                    <img src="img/null/Captive.jpg"
+                         style="width: 100%;"
+                         alt="Jackie">
+                    
+                </div>
+                
+                <div class="photoi">
+                    <img src="img/null/gobby.gif"
+                         style="width: 100%;"
+                         alt="Gabby">
+                    
+                </div>
+                
+                <div class="photoi">
+                    <img src="img/null/group.jpg"
+                         style="width: 100%;"
+                         alt="Juli">
+                   
+                </div>
+                
+                <div class="photoi">
+                    <img src="img/null/thug.jpg"
+                         style="width: 100%;"
+                         alt="Thug">
+                    
+                </div>
+                
+                <!-- 3.2 -->
+                <div class="stamp">3.2</div>
+                <div class="stamptitle">12.7.13</div>
+                <ul class="stamplist">
+                    <li class="bit">Captivating After Hours Image</li>
+                    <li class="bit">Refresh rate changed to every 20 seconds</li>
+                </ul>
+                
+                <!-- 3.1 -->
+                <div class="stamp">3.1</div>
+                <div class="stamptitle">12.3.13</div>
+                <ul class="stamplist">
+                    <li class="bit">Open Wide Icon</li>
+                </ul>
+                <div class="photoi">
+                 
+                    <img src="img/gallery/icon-version-3.1.jpg"
+                         style="width: 100%;"
+                         alt="Eric">
+                </div>
+                
+                <!-- Version 3.0 -->
+                <div class="stamp">3.0</div>
+                <div class="stamptitle">11.25.13</div>
+                <ul class="stamplist">
+                    <li class="bit">Huge thanks to John Choi for producing a 
+                        <a href="https://www.youtube.com/watch?v=g5Gv_wmZNmM&feature=youtu.be">
+                            how-to
+                        </a>
+                    </li>
+                    <li class="bit">Orange-based color scheme</li>
+                    <li class="bit">Better cross-platform support</li>
+                    <li class="bit">Android Full Screen (
+                        <a href="https://developers.google.com/chrome/mobile/docs/installtohomescreen"
+                           target="_blank">
+                            "Add to Homescreen"
+                        </a>
+                        Chrome M31+ Beta)</li>
+                    <li class="bit">Higher Resolution Icon for Android</li>
+                    <li class="bit">New Fonts (Lobster Two, Roboto, Source Sans Pro, etc)</li>
+                    <li class="bit">Navigation Bars</li>
+                    <li class="bit">New Gallery for past icons</li>
+                    <li class="bit">Redesigned version history</li>
+                    <li class="bit">Rotating null time symbols</li>
+                    <li class="bit">Beanie icon</li>
+                    <li class="bit">Flight Splash</li>
+                </ul>
+                
+                <div class="photoi">
+                <img src="img/gallery/icon-version-3.0.jpg"
+                     style="width:100%"
+                     alt="ERF Gang">
+                Taken by Anthony Kim
+                </div>
+                
+                <div class="photoi">
+                <img src="img/gallery/splash-version-3.0.jpg"
+                     style="width:100%"
+                     alt="Fly">
+                JT can fly. Taken by Michael Lin
+                </div>
+                
+                <!-- 2.3 -->           
+                <div class="stamp">2.3</div>
+                <div class="stamptitle">11.13.13</div>
+                <ul class="stamplist">
+                    <li class="bit">Bug Fixes</li>
+                </ul>
+                <div class="photoi">
+                <img src="img/gallery/icon-version-2.3.jpg"
+                     alt="UCI"
+                     style="width:100%;"><br>
+                Froggy Icon
+                </div>
+                
+
+                <div class="stamp">2.2</div>
+                <div class="stamptitle">11.10.13</div>
+                <ul class="stamplist">
+                    <li class="bit">Normal Distribution image</li>
+                    <li class="bit">Kimster Visor Icon</li>
+                    <li class="bit">Pep Rally Bug Resolved</li>
+                </ul>
+                <div class="photoi">
+                <img src="img/gallery/icon-version-2.2.jpg"
+                     alt="Visors"
+                     style="width:100%;"><br>
+                Anthony gets his SPF maxed out.
+                </div>
+
+                <div class="stamp">2.1</div>
+                <div class="stamptitle">11.5.13</div>
+                <ul class="stamplist">
+                    <li class="bit">JCL POM Feature</li>
+                </ul>
+                <div class="photoi">
+                <img src="img/gallery/picture-version-2.1.jpg"
+                     alt="Pumpkinfest">
+                </div>
+                    
+                <div class="stamp">2.0</div>
+                <div class="stamptitle">11.2.13</div>
+                <ul class="stamplist">
+                    <li class="bit">New Design</li>
+                    <li class="bit">Faster Update Rate, 10 seconds </li>
+                    <li class="bit">New Splash Image</li>
+                    <li class="bit">New disbelief icon</li>
+                    <li class="bit">Return to <a href="Version2/Sched.html">retro</a>?</li>
+                </ul>
+                <div class="photoi">
+                <img src="img/gallery/icon-version-2.0.jpg" alt="KT"><br>
+                Disbelief Icon
+                </div>
+                <div class="photoi">
+                <img src="img/gallery/splash-version-2.0.jpg"
+                     style="width:100%"
+                     alt="Sparks">
+                Thermite Sparks. Taken by Michael Lin
+                </div>
+                    
+                <div class="stamp">1.4</div>
+                <div class="stamptitle">10.31.13</div>
+                <ul class="stamplist">
+                    <li class="bit">New icon of eager chemistry student</li>
+                </ul>
+                <div class="photoi">
+                    
+                    <img src="img/gallery/icon-version-0.0.jpg" 
+                         alt="Chem Student" style="width:100%;">
+                    Eager Chemistry Student
+                </div>
+
+                <div class="stamp">1.3</div>
+                <div class="stamptitle">10.25.13</div>
+                <ul class="stamplist">
+                    <li class="bit">Offline mode enabled for some browsers</li>
+                    <li class="bit">General speed boosts</li>
+                </ul>
+
+                <div class="stamp">1.2</div>
+                <div class="stamptitle">10.23.13</div>
+                <ul class="stamplist">
+                    <li class="bit">Links of this page will no longer open in safari</li>
+                    <li class="bit">New page containing version histories</li>
+                </ul>
+
+                <div class="stamp">1.1</div>
+                <div class="stamptitle">10.21.13</div>
+                <ul class="stamplist">
+                    <li class="bit">New icon of surprised student</li>
+                </ul>
+                <div class="photoi">
+                <img src="img/gallery/icon-version-1.1.png"
+                     alt="Harp">
+                </div>
+
+                <div class="stamp">1.0</div>
+                <div class="stamptitle">10.14.13</div>
+                <ul class="stamplist">
+                    <li class="bit">Added auto-refresh every 30 seconds</li>
+                    <li class="bit">Clicking links to info page</li>
+                </ul>
+                
+                <div class="stamp">A</div>
+                <div class="stamptitle">Alpha</div>
+                <ul class="stamplist">
+                    <li>From a time before (Version) History</li>
+                </ul>
+                <div class="photoi">
+                    <img src="img/gallery/splash-version-0.0.jpg"
+                         alt="Belling" style="width:100%">
+                </div>
+                
+                <div class="photoi">
+                    <img src="img/gallery/splash-version-0.1.jpg"
+                         alt="Head Scarf" style="width:100%">
+                </div>
+                
+                <div class="photoi">
+                    <img src="img/gallery/icon-version-0.1.jpg"
+                         alt="Turtle Scott" style="width:100%">
+                </div>
+                
+            </div>
+        </div>
+        <!-- End: Page Content -->
+        
+        <!-- Begin: Sticky Footer -->
+        <div id="footer_container">
+            
+            <div id="footer">
+                <ul style="
+                    list-style-type:none; margin:0; padding:0; width: 100%;
+                    overflow: hidden">
+                    <li class="navitem" style="border-left-style: none;">
+                        <a class="nava" href="about.html">About</a>
+                    </li>
+                    <li class="navitem"><a class="nava" href="Sched.html">
+                                        Bell
+                                    </a></li>
+                    <li class="navitem">
+                        <a class="nava" href="list.html">Times</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End: Sticky Footer -->
+    
+    </body>
+</html>
